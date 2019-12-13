@@ -3,21 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 import Players from './components/Players';
+import { getData } from './hooks/getData';
 
 function App() {
 
  const [playerData, updatePlayerData] = useState([]);
 
  useEffect(() => {
-   axios
-   .get('http://localhost:5000/api/players')
-   .then(res => {
-     console.log(res.data);
-     updatePlayerData(res.data)
-   })
-   .catch(err => {
-     console.error(err);
-   })
+   getData('http://localhost:5000/api/players',updatePlayerData)
  },[])
  
   return (
