@@ -1,6 +1,6 @@
 import React from 'react';
 import Player from './Player';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 const Players = (props) => {
 

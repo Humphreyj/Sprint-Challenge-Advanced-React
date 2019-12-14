@@ -1,9 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { render } from '@testing-library/react';
+import App, {playerData,updatePlayerData, getData} from './App';
+import Player from './components/Player';
+
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  
+  const container =  render(<App />);
+  
+  
+  
 });
+
+it('Renders player', () => {
+  
+   render(<Player />);
+
+});
+
+
+
+
+test('test', () => {
+  expect(2).toBe(2);
+})

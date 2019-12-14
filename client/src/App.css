@@ -1,0 +1,12 @@
+.player-wrap {
+    display: flex;
+         justify-content: space-between;
+         width: 70%;
+         margin: 0 auto;
+
+    
+}
+
+.player-wrap:nth-child(odd) {
+    background-color: grey;
+}
