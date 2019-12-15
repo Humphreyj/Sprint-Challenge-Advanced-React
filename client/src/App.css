@@ -3,10 +3,15 @@
          justify-content: space-between;
          width: 70%;
          margin: 0 auto;
+         padding: 2%;
 
     
 }
 
 .player-wrap:nth-child(odd) {
     background-color: grey;
+}
+
+.title {
+    text-align: center;
 }
